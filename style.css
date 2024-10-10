@@ -111,7 +111,7 @@ nav ul li a:hover {
 }
 
 .secondSection .vertical {
-    height: 93px;
+    height: 340px;
     width: 1px;
     background-color: white;
     margin: 0 245px;
@@ -164,4 +164,60 @@ footer .footer-rights {
     text-align: center;
     color: gray;
     padding: 12px 0;
+}
+
+@media screen and (max-width: 1400px) {
+    body {
+        background-color: none;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+
+
+
+    nav {
+        flex-direction: column;
+    }
+
+    .secondSection .box {
+        width: 100vw;
+    }
+
+    .firstsection {
+        flex-direction: column-reverse;
+    }
+
+    .leftsection {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rightsection {
+        width: 700px !important;
+        display: flex;
+        justify-self: center;
+    }
+
+    .rightsection {
+        width: 45vw;
+        margin-bottom: 73px;
+    }
+
+    .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        min-width: fit-content;
+    }
 }
