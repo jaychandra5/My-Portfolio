@@ -346,6 +346,7 @@ nav ul li a:hover {
     .leftsection {
         width: 100%; /* Use full width */
         margin: 20px 0; /* Add margin for spacing */
+        text-align: center;
     }
 
     .rightsection {
@@ -369,6 +370,7 @@ nav ul li a:hover {
         width: 100%; /* Make footer items full width */
         text-align: center; /* Center text in footer */
         margin-bottom: 20px; /* Add spacing between items */
+        border-top: 2px solid rgb(170, 107, 228);
     }
 }
 
