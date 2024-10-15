@@ -1,3 +1,4 @@
+/*
 * {
     margin: 0;
     padding: 0;
@@ -219,5 +220,166 @@ footer .footer-rights {
 
     body {
         min-width: fit-content;
+    }
+}
+*/
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Helps manage box sizes */
+}
+
+body {
+    background-color: rgb(52, 52, 78);
+    color: rgb(235, 224, 224);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(1, 1, 29);
+    padding: 0 20px; /* Adjusted padding for better spacing */
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px; /* Adjusted margin for better spacing */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav ul li a:hover {
+    color: rgb(202, 202, 245);
+}
+
+/* First Section */
+.firstsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin: 35px 0;
+}
+
+.firstsection > div {
+    flex: 1 1 40%; /* Flexbox for responsiveness */
+    margin: 20px; /* Added margin for spacing */
+}
+
+.leftsection {
+    background-color: rgb(52, 52, 78);
+    font-size: 2rem;
+}
+
+.leftsection .buttons {
+    padding: 20px 0; /* Adjusted padding */
+}
+
+.leftsection .btn {
+    padding: 12px;
+    background: rgb(42, 42, 49);
+    color: aliceblue;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Right Section */
+.rightsection img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 500px; /* Set max width */
+}
+
+/* Second Section */
+.secondSection {
+    max-width: 80vw;
+    margin: 40px auto; /* Center the section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secondSection .box {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center the items */
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    padding: 23px;
+    justify-content: space-evenly;
+}
+
+.footer > div {
+    width: 220px; /* Adjusted width for footer items */
+}
+
+/* Media Queries */
+@media screen and (max-width: 1400px) {
+    nav {
+        flex-direction: column; /* Stack navigation items */
+        align-items: center; /* Center align navigation */
+    }
+
+    .firstsection {
+        flex-direction: column-reverse; /* Stack sections vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .leftsection {
+        width: 100%; /* Use full width */
+        margin: 20px 0; /* Add margin for spacing */
+    }
+
+    .rightsection {
+        width: 100%; /* Use full width on smaller screens */
+        max-width: 700px; /* Maintain max width for larger screens */
+        margin-bottom: 30px; /* Reduce bottom margin for better spacing */
+    }
+
+    .secondSection {
+        width: 100%; /* Use full width */
+        height: auto; /* Let height adjust based on content */
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    .box {
+        flex-direction: column; /* Stack box elements */
+        align-items: center; /* Center items */
+    }
+
+    .footer > div {
+        width: 100%; /* Make footer items full width */
+        text-align: center; /* Center text in footer */
+        margin-bottom: 20px; /* Add spacing between items */
+    }
+}
+
+/* Additional Mobile Styles */
+@media screen and (max-width: 768px) {
+    .leftsection {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+    }
+
+    .leftsection .btn {
+        width: 100%; /* Make buttons full width */
+        margin-bottom: 10px; /* Space between buttons */
     }
 }
